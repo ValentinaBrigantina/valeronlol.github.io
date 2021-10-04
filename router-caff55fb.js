@@ -1,0 +1,1 @@
+let t=[{target:"/",title:"main_page"},{target:"/work_experience",title:"work_experience"},{target:"/blog",title:"blog"},{target:"/hobby",title:"hobby"}];const e=t=>t===window.location.pathname,a=e=>(console.log("CONSOLE: currentPath",e),e.endsWith("/")&&"/"!==e&&(e=e.slice(0,-1)),t.find((t=>t.target===e))),r=t.filter((({target:t})=>"/"!==t));export{a as g,e as i,r};
